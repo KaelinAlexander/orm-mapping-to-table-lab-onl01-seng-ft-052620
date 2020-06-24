@@ -1,6 +1,5 @@
 class Student
 attr_accessor :name, :grade. :id
-attr_reader :id
 
 @@all = []
 
