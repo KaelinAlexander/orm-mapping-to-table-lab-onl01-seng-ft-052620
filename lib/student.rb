@@ -32,6 +32,10 @@ attr_reader :id
 
   def save
     sql = <<-SQL
+      INSERT VALUES INTO students (name, grade)
+      VALUES (?, ?)
+      SQL
+      DB[:conn].execute(sql, self.name, self.grade)
 
 
 
