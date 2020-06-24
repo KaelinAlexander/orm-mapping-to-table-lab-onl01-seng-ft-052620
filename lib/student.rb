@@ -3,7 +3,7 @@ attr_accessor :name, :grade, :id
 
 @@all = []
 
-  def initalize(name:, grade:, id:)
+  def initalize(name:, grade:)
    @name = name
    @grade = grade
    @id = id
