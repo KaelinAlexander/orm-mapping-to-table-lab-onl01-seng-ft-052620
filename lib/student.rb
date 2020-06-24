@@ -4,8 +4,7 @@ attr_reader :id
 
 @@all = []
 
-  def initalize(name, grade, id = nil)
-   @id = id
+  def initalize(name, grade)
    @name = name
    @grade = grade
   end
