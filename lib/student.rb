@@ -28,8 +28,6 @@ attr_reader :id
       DB[:conn].execute(sql)
   end
 
-  end
-
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
@@ -44,8 +42,6 @@ attr_reader :id
     student = Student.new(name, grade)
     student.save
     student
-  end
-
   end
 
 end
